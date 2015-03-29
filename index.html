@@ -26,7 +26,7 @@
       <div class="col-md-2">
         <!--Sidebar content-->
         Search: <input ng-model="query">
-      <h3> Favorite </h3>
+      <h3>Favorite</h3>
       <ul>
         <li>item1</li>
         <li>item2</li>
@@ -34,18 +34,18 @@
       </div>
       <div class="col-md-10">
         <!--Body content-->
-        <table class="table table-hover"  >
+        <table class="table table-hover">
           <tr>
               <th> ## </th>
               <th>Ten Bai Hat</th>
               <th>Ca Sy</th>
           </tr>
           <tr ng-repeat="song in songs | filter:query | limitTo: 15 ">
-            <td> {{song.ID}} <a  ng-click ="addSong(song.ID,song.songName);">
+            <td>{{song.ID}} <a  ng-click ="addSong(song.ID,song.songName);">
           <span class="glyphicon glyphicon-thumbs-up"></span>
         </a></td>
-            <td>  {{song.songName}}</td>
-            <td> {{song.singer}}</td>
+            <td>{{song.songName}}</td>
+            <td>{{song.singer}}</td>
         </table>
       </div>
     </div>
